@@ -1,6 +1,6 @@
 # Spamty standalone - configuration
 
-Edit the `email.php` file with a text editor to adjust the following settings.
+Edit the `spamty.php` file with a text editor to adjust the following settings.
 
 ## information to protect
 
@@ -32,8 +32,8 @@ Choose a captcha service that you want to use. There are multiple options:
 
  * `hcaptcha` for hCaptcha (free and recommended); you will need to create an account at <https://www.hcaptcha.com/> and set your site key and private key.
  * `recaptcha` for Google ReCaptcha; you will need to sign up at <https://google.com/recaptcha> and set your site key and private key.
- * `html` for simple checkbox; this is the default value but it is very unsecure and should not be used.
- * `php` for your local version of Securimage; you will need to install the software from <https://www.phpcaptcha.org/>.
+ * `html` for simple checkbox with HTML and Javascript; this is the default value but it is very unsecure and should not be used.
+ * `php` for your local version of Securimage; you will need to install the software from <https://www.phpcaptcha.org/> in `./vendor/dapphp/securimage/`.
 
 For hcaptcha and recaptcha you also have to enter your valid site key and secret key that can be obtained after you signed up.
 
@@ -48,10 +48,12 @@ $CAPTCHA_PRIVKEY = "0xABCDEF1234567VWXYZ890";
 
 ## text / translation
 
-You can adjust/translate the text that will be displayed on the website:
+You can adjust/translate the text that will be displayed on the website.
 
+English:
 ```
 $text_pre_captcha = "Please solve the captcha below to see the requested information:";
+$text_captcha_hint = "Please click this box and verify that you are a human.";
 $text_after_captcha = "Here is the information you wanted to see:";
 $text_wrong_captcha = "We couldn't verify that you are a human.";
 $text_captcha_button = "Show me!";
