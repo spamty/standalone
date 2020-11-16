@@ -67,16 +67,18 @@ session_start();
 
 <div class="container"><!-- container -->
 
-<header>
-	<div class="header row">
-		<div class="col-md">
-    	<h3 class="text-muted"><?php echo $text_title; ?></h3>
+<?php if(!isset($_GET['iframe'])){ ?>
+	<header>
+		<div class="header row">
+			<div class="col-md">
+    		<h3 class="text-muted"><?php echo $text_title; ?></h3>
+			</div>
 		</div>
-	</div>
-</header>
+	</header>
+<?php } ?>
+
 
 <main>
-
 
 
 <?php
@@ -208,13 +210,14 @@ if( empty($_POST['submit']) ){
 ?>
 </main>
 
-
-<div class="footer">
-	<footer>
-		<hr />
-		<p class="text-center"><small><?php echo $text_footer; ?></small></p>
-	</footer>
-</div>
+<?php if(!isset($_GET['iframe'])){ ?>
+	<div class="footer">
+		<footer>
+			<hr />
+			<p class="text-center"><small><?php echo $text_footer; ?></small></p>
+		</footer>
+	</div>
+<?php } ?>
 
 </div><!-- /container -->
 
