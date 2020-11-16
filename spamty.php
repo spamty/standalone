@@ -42,6 +42,10 @@ $text_title = "My contact information";
 $text_footer = "Powered by <a href='https://spamty.eu/standalone.php'>Spamty standalone</a>";
 
 
+
+
+
+session_start();
 /* ******* Do not change anything below this line! ******* */
 ?>
 <!DOCTYPE html>
