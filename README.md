@@ -7,12 +7,13 @@
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/spamty?style=social)](https://twitter.com/Spamty)
 [![Mastodon Follow](https://img.shields.io/static/v1?label=@spamty@fosstodon.org&message=%20&style=social&logo=mastodon)](https://fosstodon.org/@spamty)
-[![Keybase](https://img.shields.io/static/v1?label=Keybase&message=%20&style=social&logo=keybase)](https://keybase.io/spamty)
 [![GitHub](https://img.shields.io/github/followers/spamty?label=GitHub&style=social)](https://github.com/spamty/)
 
 Selfhosted standalone version of "Spamty" to protect your email against spam bots.
 
-DESCRIPTION TBD ...
+Instead of writing your email address publicly on your website just create a link to the `spamty.php` file on your webserver.
+If someone clicks on this link they have to solve a captcha before they can view your email address.
+Spam bots have no chance to crawl your email address.
 
 ## Usage
 
@@ -24,4 +25,14 @@ You can instead use the service [Spamty.eu](https://spamty.eu/) if you do not wa
 
 ## Demo
 
-## Spamty
+TBD
+
+## Spamty.eu
+
+This script is based on [Spamty.eu](https://spamty.eu/). A service to protect your email address against spam bots.
+You can instead use the webservice if you do not want to selfhost this PHP script.
+
+[Get started](https://spamty.eu/) |
+[Donate](https://spamty.eu/donate.php) |
+[FAQ](https://spamty.eu/faq.php) |
+[Contact](https://spamty.eu/contact.php)
