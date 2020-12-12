@@ -39,14 +39,13 @@ $text_wrong_captcha = "We couldn't verify that you are a human.";
 $text_captcha_button = "Show me!";
 $text_title = "My contact information";
 // A backlink to Spamty.eu is appreciated but you are free to remove it:
-$text_footer = "Powered by <a href='https://spamty.eu/standalone.php'>Spamty standalone</a>";
+$text_footer = "Powered by <a href='https://github.com/spamty/standalone'>Spamty standalone</a>";
 
 
 
 
-
-session_start();
 /* ******* Do not change anything below this line! ******* */
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -112,9 +111,8 @@ if( empty($_POST['submit']) ){
       	<small id="captcha_codeHelp" class="form-text text-muted"><?php echo $text_captcha_hint; ?></small>
 			<?php }
 			else{ ?>
-				<input type="checkbox" name="spam_checkbox" id="spam_checkbox" value="yes" />
+				<input type="checkbox" name="spam_checkbox" id="spam_checkbox" value="yes" required />
 				<label for="spam_checkbox"><?php echo $text_captcha_hint; ?></label>
-				<!-- javascript ... -->
 			<?php } ?>
   	</div>
 
