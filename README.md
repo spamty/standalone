@@ -34,7 +34,8 @@ You can instead use the service [Spamty.eu](https://spamty.eu/) if you do not wa
 
 ## Demo
 
-TBD
+[Demo with PHP captcha](https://standalone.spamty.eu/demo-php.php) |
+[Demo with hCaptcha](https://standalone.spamty.eu/demo-hcaptcha.php)
 
 ## Spamty.eu
 
