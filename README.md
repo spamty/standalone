@@ -20,6 +20,15 @@ Spam bots have no chance to crawl your email address.
  1. Download the [latest release](https://github.com/spamty/standalone/releases/latest) of the `spamty.php` file.
  2. Upload the `spamty.php` file to your web server.
  3. Open the `spamty.php` file with a text editor [to configure it](https://github.com/spamty/standalone/blob/master/CONFIG.md).
+ 4. Link to the `spamty.php` file instead of showing your email address on the website.
+
+Link with pop up window:
+
+    <a href="http://example.com/spamty.php" onclick="mailhidepopup=window.open('http://example.com/spamty.php','mailhidepopup','width=580,height=450'); return false;">My email address</a>
+
+iframe:
+
+    <iframe src="http://example.com/spamty.php" width="580" height="450" style="border:none;"></iframe>
 
 You can instead use the service [Spamty.eu](https://spamty.eu/) if you do not want to selfhost it.
 
